@@ -26,13 +26,6 @@ A bank ran a phone-based marketing campaign targeting ~45,000 customers to sell 
 The full pipeline follows the **CRISP-DM methodology** and ends with an interactive **Power BI dashboard** built for non-technical stakeholders.
 
 ---
-
-## 📊 Dashboard Preview
-
-> *Upload your dashboard screenshot as `img/dashboard.png` and the preview image at the top will render automatically.*
-
----
-
 ## 💡 Key Results
 
 | Finding | Detail |
