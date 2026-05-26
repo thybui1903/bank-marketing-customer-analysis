@@ -62,8 +62,14 @@ Actionable rules discovered through association rule mining:
 - **Support vs. Confidence Chart**: All mined rules visualized for business filtering
 - **Key Insight Callouts**: Plain-language summaries of the most actionable rules (e.g., customers contacted ≤ 3 times with a prior success → high conversion)
 
-### How to Open
-1. **[Download Dashboard.pbix](https://uithcm-my.sharepoint.com/:u:/g/personal/23521562_ms_uit_edu_vn/IQDGxOhayuSFR7Di9KsFMCQsAfJBeHdNDqCjCOIbkzKKpnY?e=WqhSQs)** — hosted on SharePoint
+### 🔗 Links
+| | |
+|---|---|
+| **Live Dashboard** | [View on Power BI Service](https://app.powerbi.com/links/t1IOABFPjN?ctid=2dff09ac-2b3b-4182-9953-2b548e0d0b39&pbi_source=linkShare) |
+| **Download .pbix** | [Download from SharePoint](https://uithcm-my.sharepoint.com/:u:/g/personal/23521562_ms_uit_edu_vn/IQDGxOhayuSFR7Di9KsFMCQsAfJBeHdNDqCjCOIbkzKKpnY?e=WqhSQs) |
+
+### How to Open Locally
+1. Download `Dashboard.pbix` via the link above
 2. Open with [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free)
 3. If prompted, update the data source path to your local CSV files
 
