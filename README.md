@@ -23,53 +23,6 @@ The full pipeline follows the **CRISP-DM methodology** and ends with an interact
 
 ---
 
-## 📊 Power BI Dashboard
-
-### Preview
-
-<p align="center">
-  <img src="assets/dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
-</p>
-
-### Dashboard Pages
-
-The dashboard is structured into **4 pages**, each addressing a different business question:
-
-#### Page 1 — Campaign Overview
-A high-level summary of the marketing campaign performance:
-- **KPI Cards**: Total customers contacted, total subscriptions, overall conversion rate (~11%)
-- **Subscriptions by Month**: Bar chart revealing which months had the highest success rates
-- **Contact Method Breakdown**: Pie chart comparing cellular vs. telephone effectiveness
-- **Call Duration vs. Outcome**: Visual showing that longer calls strongly correlate with subscriptions
-
-#### Page 2 — Customer Demographics
-Who are the customers, and which profiles convert?
-- **Age Distribution**: Histogram segmented by subscription outcome (yes/no)
-- **Job Category**: Conversion rates broken down by occupation (admin, blue-collar, retired, etc.)
-- **Education & Marital Status**: Stacked bar charts showing subscription behavior across groups
-- **Financial Profile**: Housing loan and personal loan status impact on subscription likelihood
-
-#### Page 3 — Customer Segmentation
-Results of K-Means clustering (K=4) to identify high-potential customer groups:
-- **Cluster Profiles Table**: Average age, balance, call duration, and campaign contacts per cluster
-- **Subscription Rate by Cluster**: Which segments convert the most?
-- **Balance vs. Duration Scatter Plot**: Clusters plotted to show separation and overlap
-- **Cluster Size Distribution**: How many customers fall into each segment
-
-#### Page 4 — Pattern Mining Insights
-Actionable rules discovered through association rule mining:
-- **Top Rules by Lift**: The strongest behavioral patterns linked to subscription
-- **Support vs. Confidence Chart**: All mined rules visualized for business filtering
-- **Key Insight Callouts**: Plain-language summaries of the most actionable rules (e.g., customers contacted ≤ 3 times with a prior success → high conversion)
-
-### 🔗 Links
-| | |
-|---|---|
-| **Live Dashboard** | [View on Power BI Service](https://app.powerbi.com/links/t1IOABFPjN?ctid=2dff09ac-2b3b-4182-9953-2b548e0d0b39&pbi_source=linkShare) |
-| **Download .pbix** | [Download from SharePoint](https://uithcm-my.sharepoint.com/:u:/g/personal/23521562_ms_uit_edu_vn/IQDGxOhayuSFR7Di9KsFMCQsAfJBeHdNDqCjCOIbkzKKpnY?e=WqhSQs) |
-
----
-
 ## 💡 Key Results
 
 | Finding | Detail |
@@ -101,6 +54,66 @@ Actionable rules discovered through association rule mining:
 ```
 
 ---
+## 📊 Power BI Dashboard
+
+### Preview
+
+<p align="center">
+  <img src="assets/dashboard_1.png" alt="Power BI Dashboard Preview" width="900"/>
+</p>
+
+The dashboard is structured into three main analytical views, each targeting a specific business dimension:
+
+### 1. Campaign Overview
+Provides a high-level summary of campaign metrics, timeline trends, and primary contact touchpoints.
+
+* **Core KPI Cards:**
+    * **Total Customers:** 2,149
+    * **Average Campaign:** 1.98 contacts/customer
+    * **Average Duration:** 244.65 seconds
+    * **Total Subscriptions:** 677
+    * **Conversion Rate:** 12.6%
+* **Key Visualizations & Insights:**
+    * **Monthly Performance:** May has the highest influx of total customers reached, but conversion rates (%) strongly peak later in the year, hitting their highest performance between **August and November** (surpassing 30-35%).
+    * **Campaign Fatigue:** Conversion rates drop drastically as the number of contact calls increases. A single call yields the highest conversion (~14%), which steadily declines down to less than 4% for customers contacted 6+ times.
+    * **Contact Channels:** Cellular contact methods achieve a slightly higher conversion rate compared to traditional telephone lines.
+
+<p align="center">
+  <img src="assets/dashboard_2.png" alt="Power BI Dashboard Preview" width="900"/>
+</p>
+
+### 2. Customer Segmentation Analysis
+Delves into customer demographics, professional backgrounds, and financial behaviors to pinpoint ideal target audiences.
+
+* **Interactive Slicers:** Filter data dynamically by *Job*, *Age Group*, *Balance Group*, and *Debt Level*.
+* **Key Visualizations & Insights:**
+    * **Age Demographics:** The largest volume of customers falls under the **U40, U50, and U60** groups. However, conversion rates take a sharp upward trajectory in older demographics (**U70 and U100**), representing a highly responsive niche market.
+    * **Financial Profiles & Debt Impact:** Customers classified with **"No Debt"** demonstrate significantly higher conversion rates compared to those with "Low Debt" or "High Debt". 
+    * **Balance vs. Age Cluster Map:** An interactive breakdown analyzing average age against average balance shows that lower-risk profiles (No/Low Loans) with stable balances cluster tightly around the 35–45 age range.
+
+<p align="center">
+  <img src="assets/dashboard_3.png" alt="Power BI Dashboard Preview" width="900"/>
+</p>
+
+### 3. Previous Campaign Analysis
+Evaluates historical patterns and customer journey touchpoints to define optimal thresholds for call timings and intervals.
+
+* **Predictive & Optimization KPIs:**
+    * **Previous Success Impact:** 64.75% conversion retention from historically successful customers.
+    * **Optimal Recency (Sweet Spot):** **31–90 days** since the last campaign contact.
+    * **Optimal Call Duration:** **538.95 seconds** (~9 minutes) is identified as the prime window to secure a subscription.
+    * **Historical Customer Value:** 0.14
+* **Key Visualizations & Insights:**
+    * **Historical Outings (`poutcome`):** Customers who previously yielded a "success" maintain a distinctly high conversion rate regardless of minor variations in campaign frequency.
+    * **Duration Group vs. Campaign Bin:** Longer durations (>20 minutes) matched with a lower frequency of total calls (1-3 calls) display an exponential conversion probability, highlighting that quality interaction beats volume outreach.
+    * **Recency (Pdays Group):** The **31–90 days** interval combined with a previous "success" outcome serves as the absolute highest-converting window across all historical timelines.
+### 🔗 Links
+| | |
+|---|---|
+| **Live Dashboard** | [View on Power BI Service](https://app.powerbi.com/links/t1IOABFPjN?ctid=2dff09ac-2b3b-4182-9953-2b548e0d0b39&pbi_source=linkShare) |
+| **Download .pbix** | [Download from SharePoint](https://uithcm-my.sharepoint.com/:u:/g/personal/23521562_ms_uit_edu_vn/IQDGxOhayuSFR7Di9KsFMCQsAfJBeHdNDqCjCOIbkzKKpnY?e=WqhSQs) |
+
+---
 
 ## 🛠️ Skills Demonstrated
 
@@ -119,21 +132,20 @@ Actionable rules discovered through association rule mining:
 
 ```
 Bank-Marketing-Customer-Analysis/
-│
-├── Final Project/
-│   ├── EDA.ipynb                   # Exploratory Data Analysis
-│   ├── Preprocessing.ipynb         # Cleaning, encoding, transformation
-│   ├── Feature_Selection.ipynb     # Random Forest + Mutual Information
-│   ├── Clustering.ipynb            # K-Means + Elbow Method
-│   ├── Pattern_Mining.ipynb        # Association rule extraction
-│   └── Dashboard.pbix              # Power BI dashboard
-│
-├── assignment/                     # Coursework supporting materials
-├── assets/                         # Screenshots and images for README
-└── README.md
+├── assets/                         # Screenshots and dashboard preview images
+├── dashboard/                      # Power BI dashboard files and exports
+├── data/                           # Raw dataset files
+│   ├── test.csv
+│   └── train.csv
+├── notebook/                       # Jupyter notebooks for analysis steps
+│   ├── eda_before_preprocessing.ipynb
+│   ├── eda_after_preprocessing.ipynb
+│   ├── preprocessing.ipynb
+│   ├── feature_selection.ipynb
+│   └── pattern_analysis_evaluate.ipynb
+├── report/                         # Final report and summary artifacts
+└── README.md                       # Project overview and pipeline summary
 ```
-
-> ⚠️ Update notebook filenames above to match your actual files.
 
 ---
 
