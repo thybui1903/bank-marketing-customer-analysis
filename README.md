@@ -1,10 +1,6 @@
 # 🏦 Bank Marketing Campaign Analysis & Customer Segmentation
 
 <p align="center">
-  <img src="img/dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white"/>
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black"/>
@@ -24,6 +20,13 @@ A bank ran a phone-based marketing campaign targeting ~45,000 customers to sell 
 3. **What patterns drive conversion?** → Association rule mining for actionable campaign rules
 
 The full pipeline follows the **CRISP-DM methodology** and ends with an interactive **Power BI dashboard** built for non-technical stakeholders.
+
+---
+## 📊 Dashboard Preview
+<p align="center">
+  <img src="img/dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
+</p>
+> *Upload your dashboard screenshot as `assets/dashboard.png` and the preview image at the top will render automatically.*
 
 ---
 ## 💡 Key Results
