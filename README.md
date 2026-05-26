@@ -1,7 +1,7 @@
 # 🏦 Bank Marketing Campaign Analysis & Customer Segmentation
 
 <p align="center">
-  <img src="img\dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
+  <img src="img/dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@ The full pipeline follows the **CRISP-DM methodology** and ends with an interact
 
 ## 📊 Dashboard Preview
 
-> *Upload your dashboard screenshot as `assets/dashboard.png` and the preview image at the top will render automatically.*
+> *Upload your dashboard screenshot as `img/dashboard.png` and the preview image at the top will render automatically.*
 
 ---
 
