@@ -22,13 +22,53 @@ A bank ran a phone-based marketing campaign targeting ~45,000 customers to sell 
 The full pipeline follows the **CRISP-DM methodology** and ends with an interactive **Power BI dashboard** built for non-technical stakeholders.
 
 ---
-## 📊 Dashboard Preview
+
+## 📊 Power BI Dashboard
+
+### Preview
+
 <p align="center">
-  <img src="img/dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
+  <img src="assets/dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
 </p>
-> *Upload your dashboard screenshot as `assets/dashboard.png` and the preview image at the top will render automatically.*
+
+### Dashboard Pages
+
+The dashboard is structured into **4 pages**, each addressing a different business question:
+
+#### Page 1 — Campaign Overview
+A high-level summary of the marketing campaign performance:
+- **KPI Cards**: Total customers contacted, total subscriptions, overall conversion rate (~11%)
+- **Subscriptions by Month**: Bar chart revealing which months had the highest success rates
+- **Contact Method Breakdown**: Pie chart comparing cellular vs. telephone effectiveness
+- **Call Duration vs. Outcome**: Visual showing that longer calls strongly correlate with subscriptions
+
+#### Page 2 — Customer Demographics
+Who are the customers, and which profiles convert?
+- **Age Distribution**: Histogram segmented by subscription outcome (yes/no)
+- **Job Category**: Conversion rates broken down by occupation (admin, blue-collar, retired, etc.)
+- **Education & Marital Status**: Stacked bar charts showing subscription behavior across groups
+- **Financial Profile**: Housing loan and personal loan status impact on subscription likelihood
+
+#### Page 3 — Customer Segmentation
+Results of K-Means clustering (K=4) to identify high-potential customer groups:
+- **Cluster Profiles Table**: Average age, balance, call duration, and campaign contacts per cluster
+- **Subscription Rate by Cluster**: Which segments convert the most?
+- **Balance vs. Duration Scatter Plot**: Clusters plotted to show separation and overlap
+- **Cluster Size Distribution**: How many customers fall into each segment
+
+#### Page 4 — Pattern Mining Insights
+Actionable rules discovered through association rule mining:
+- **Top Rules by Lift**: The strongest behavioral patterns linked to subscription
+- **Support vs. Confidence Chart**: All mined rules visualized for business filtering
+- **Key Insight Callouts**: Plain-language summaries of the most actionable rules (e.g., customers contacted ≤ 3 times with a prior success → high conversion)
+
+### How to Open
+1. **[Download Dashboard.pbix](https://uithcm-my.sharepoint.com/:u:/g/personal/23521562_ms_uit_edu_vn/IQDGxOhayuSFR7Di9KsFMCQsAfJBeHdNDqCjCOIbkzKKpnY?e=WqhSQs)** — hosted on SharePoint
+2. Open with [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free)
+3. If prompted, update the data source path to your local CSV files
 
 ---
+
 ## 💡 Key Results
 
 | Finding | Detail |
