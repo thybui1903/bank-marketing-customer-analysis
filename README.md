@@ -1,7 +1,7 @@
 # 🏦 Bank Marketing Campaign Analysis & Customer Segmentation
 
 <p align="center">
-  <img src="assets/dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
+  <img src="D:\thybui_CV\Project CV\Bank-Marketing-Customer-Analysis\img\dashboard.png" alt="Power BI Dashboard Preview" width="900"/>
 </p>
 
 <p align="center">
